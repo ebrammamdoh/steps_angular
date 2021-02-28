@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="wizard">
+                <a [class]="step.id === stepId ? 'active': 'original'" *ngFor="let step of steps" (click)="OpenItem(step.id)">
+                    Step {{step.stepNumber}}
+                    <span *ngIf="step.id != 1" (click)="RemoveStep(step.id)">-</span>
+                </a>
+                <a class="original" (click)="AddStep()"><span>+</span></a>
+            </div>
+
+            <app-item-list [stepId]="stepId"></app-item-list>
+            <div class="container">
+                <div class="row wrap-content ">
+                    <div class="col-md-3">
+                        <button class="btn btn-primary btn-block" type="button" (click)="previous()">Previous</button>
+                    </div>
+                    <div class="col-md-3 pull-right">
+                        <button class="btn btn-primary btn-block" type="button" (click)="next()">Next</button>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>

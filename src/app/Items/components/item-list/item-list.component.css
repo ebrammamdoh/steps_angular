@@ -1,0 +1,19 @@
+ 
+  .panel-position {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .panel-position > .panel {
+    width: 100%;
+    text-align: start;
+    max-width: 600px;
+  }
+  button {
+    margin-bottom: 20px;
+}
+  
+  
+  
+  

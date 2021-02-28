@@ -1,0 +1,14 @@
+.wrap-content {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.original {
+    color: black;
+}
